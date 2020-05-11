@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    table, td, th {  
+  border: 2px solid darkgrey;
+  text-align: left;
+}
+table {
+  border-collapse: collapse; /* there won't be any seperate border for each cell*/
+  width: 100%; /* it will use whole width of a browser page   */
+}
+td.ralign{
+    text-align: right;
+}
+tr:nth-child(odd) {background-color: lightblue;} /* <tr> element defines a row of cells in a table.
+                                                       The row's cells can then be established using
+                                                       a mix of <td> (data cell) and <th> (header cell) elements*/
+tr:hover {background-color:yellow;}
+</style>
+</head>
+<body>
+
+<h2>Employee Info (Table Assignment)</h2>
+<p>The information contained in these documents is confidential, privileged and only for the
+    information of the intended recipient and may not be used</p>
+
+<table>
+  <tr>
+  <th>Last Name</th>
+  <th>Title</th>
+  <th>Manager</th>
+  <th>Department</th>
+  <th>Monthly_Salary</th>
+  <th>Annual_Salary</th>
+  </tr>
+  <tr>
+  <td>Kochhar</td>
+  <td>Administration Vise President</td>
+  <td>Steven King</td>
+  <td>Executive</td>
+  <td class="ralign">17000</td>
+  <td class="ralign">204000.00</td>
+  </tr>
+  <tr>
+    <td>De Haan</td>
+    <td>Administration Vise President</td>
+    <td>Steven King</td>
+    <td>Executive</td>
+    <td class="ralign">17000</td>
+    <td class="ralign">204000.00</td>
+  </tr>  
+  <tr>
+    <td>hunold</td>
+    <td>Programmer</td>
+    <td>Lex De Haan</td>
+    <td>IT</td>
+    <td class="ralign">9000</td>
+    <td class="ralign">108000.00</td>
+  </tr> 
+  <tr>
+    <td>Emst</td>
+    <td>Programmer</td>
+    <td>John</td>
+    <td>IT</td>
+    <td class="ralign">6000</td>
+    <td class="ralign">72000.00</td>
+  </tr> 
+  <tr>
+    <td>Austin</td>
+    <td>Programmer</td>
+    <td>John</td>
+    <td>IT</td>
+    <td class="ralign">4800</td>
+    <td class="ralign">57600.00</td>
+  </tr> 
+  <tr>
+    <td>Patabalia</td>
+    <td>Programmer</td>
+    <td>John</td>
+    <td>IT</td>
+    <td class="ralign">4800</td>
+    <td class="ralign">57600.00</td>
+  </tr> 
+  <tr>
+    <td>Lorentz</td>
+    <td>Programmer</td>
+    <td>Steven</td>
+    <td>IT</td>
+    <td class="ralign">4200</td>
+    <td class="ralign">50400.00</td>
+  </tr> 
+
+</table>
+
+</body>
+</html>
