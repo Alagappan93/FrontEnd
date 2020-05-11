@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> my first html page </title>
+        <meta name="description" content=" html web exercises">
+        <meta name="keywords" content="html exercises">
+        <meta name="author" content="Alagappan Solayappan">
+        <script>
+            alert('Welcome')
+        </script>
+        <style>
+            body{
+                background-image: url('kk16192884.jpg') ;
+            }
+        </style>
+    </head>    
+        <body>
+           <!-- <div style="background-image: url('Job_Application.jpg');"> --> 
+            <h1> 
+                Hello world
+            </h1>
+            </h2> My First HTML page </h2>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                <fieldset>
+                    <legend>Personalia:</legend>
+                <br><label for="fname"> First name</label><br>
+                <input type="text" id="fname" name="fname" value="Alagu"><br>
+                <label for="mname"> Middle name </label><br>
+                <input type="text" id="mname" name="mname" value="-"><br>
+                <label for="lname"> Last name </label><br>          
+                <input type="text" id="lname" name="lname" value="Solai"><br><br>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br><br>
+                <label for="BirthPlace">Choose your Birth Place: </label>
+                <select id="BirthPlace" name="BirthPlace" size="3">
+                    <option value="India" selected>India</option>
+                    <option value="USA">Usa</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                </select><br><br>
+                <label for="dnostreet"> Door No and Street&emsp;&emsp;&emsp;</label>
+                <label for="city"> City&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+                <label for="state"> State </label><br>  
+                <input type="text" id="dnostreet" name="dnostreet" value="5, Indian Bank colony">       
+                <input type="text" id="city" name="city" value="Trichy"> 
+                <input type="text" id="state" name="state" value="TN"><br><br>
+                <p>Enter your height in inches : </p>
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 +
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output> inches
+                <br><br>
+                <label for="browsers">Choose your favorite browsers : </label>
+                <input list="browsers">
+                <datalist id="browsers">
+                  <option value="Internet Explorer">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist><br><br>
+                <h2> Comments </h2>
+                <p> Please leave your comments to improve my page, Thanks</p>
+                <textarea name="message" row="10" cols="50"></textarea><br>
+                <button type="button" onclick="alert('End of the page, Thanks for the comments, Please submit your form.')">Click Me!</button><br><br>
+                <button type="submit" value="submit"> Submit</button>
+                </fieldset>
+            </form>  
+           <!-- </div> -->
+        </body>   
+</html>        
+
