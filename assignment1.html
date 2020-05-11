@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Application</title>
+        <style>
+            body{
+                background-image: url("gg.png");
+            }
+            div.transbox {
+                margin: 40px;
+                background-color: #ffffff;
+                border: 5px double black;
+                border-radius: 8px;
+                opacity: 0.9;
+                font-weight: bold;
+            }
+            #mandatory{
+                color: red;
+            }
+            #country{
+                border-radius: 5px 5px 5px 5px;
+            }
+            button{
+                margin-left: 245px;
+                border-radius: 5px 5px 5px 5px;
+            }
+            label{
+                width: 240px;
+                display: inline-block;
+            }
+            input{
+                font-weight: bold;
+            }
+            .s{
+                margin-left: 245px;
+                color: gray;
+                font-weight: normal;
+            }
+            .ssm{
+                padding-left: 8%;
+                color: gray;
+                font-weight: normal;
+            }
+            .ssl{
+                padding-left: 6.7%;
+                color: gray;
+                font-weight: normal;
+            }
+            .sp{
+                padding-left: 13.9%;
+                color: gray;
+                font-weight: normal;
+            }
+            .c{
+                padding-left: 7.8%;
+                color: gray;
+                font-weight: normal;
+            }
+            .pnum{
+                padding-left: 1.2%;
+                color: gray;
+                font-weight: normal;
+            }
+            .day{
+                padding-left: 1.2%;
+                color: gray;
+                font-weight: normal;
+            }
+            .year{
+                padding-left: 2.5%;
+                color: gray;
+                font-weight: normal;
+            }
+        </style>
+        <script>
+            function myFunction(x) {
+              x.style.background = "yellow";
+            }
+            </script>
+    </head>
+    <body>
+        <h2 style="margin-left: 40px;"> Form Assignment</h2>
+            <div class="transbox"><br>
+                <form>
+                    <label class="a" for="Full Name">Full Name <span id="mandatory">*</span></label> 
+                    <input type="text" class="input" id="fname" name="fname" onfocus="myFunction(this)" value="" required>
+                    <input type="text" id="mname" name="mname" value="">
+                    <input type="text" id="lname" name="lname" value="" required><br>
+                    <span class="s">Full Name</span><span class="ssm">Middle Name</span><span class="ssl">Last Name</span><br><br>
+                    <label for="Current Address">Current Address</label>
+                    <input type="text" class="input" id="street address" name= "street address" size = "50 " value=""><br>
+                    <span class="s">Street Address</span><br><br>
+                    <label for="saline2"></label>
+                    <input type="text" class="input" id="saline2" name= "saline2" size = "50 " value=""><br>
+                    <span class="s">Street Address line 2</span><br><br>
+                    <label for="city"></label>
+                    <input type="text" class="input" id="city" name= "city" size = "25 " value="">
+                    <input type="text" id="SP" name= "SP" size = "25 " value=""><br>
+                    <span class="s">City</span><span class="sp">State / Province</span><br><br>
+                    <label for="PZC"></label>
+                    <input type="text" class="input" id="PZC" name= "PZC" size = "25 " value="">
+                    <select id="country" name="country" size="1">
+                        <option value="Please Select" selected>Please Select</option>
+                        <option value="India">India</option>
+                        <option value="USA">Usa</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Australia">Australia</option>
+                    </select><br>
+                    <span class="s">Postal / Zip Code</span><span class="c">Country</span><br><br>
+                    <label for="eid">Email Address <span id="mandatory">*</span></label> 
+                    <input type="text" class="input" id="eid" name="eid" size="60" placeholder="ex:myname@example.com" value=""><br><br>
+                    <label for="Phone Number">Phone Number</label>
+                    <input type="tel" class="input" id="Aracd" name="Aracd" pattern="[0-9]{3}" maxlength="3" size="5" required>  -  <input type="tel" id="pnum" name="pnum" pattern="[0-9]{3}-[0-9]{4}" maxlength="7" size="10" required> <br>
+                    <span class="s">Area code</span><span class="pnum">Phone Number</span><br><br>
+                    <label for="position">Applying for Position <span id="mandatory">*</span></label>
+                    <input list="position" class="input">
+                    <datalist id="position">
+                        <option value="Front End developer">
+                        <option value="Back End developer">
+                        <option value="Web Designer">
+                    </datalist><br><br>
+                    <label for="Startdate">Start Date</label>
+                    <input type="text" class="input" maxlength ="2" size="2">  -  <input type="text" maxlength ="2" size="2">  -  <input type="text" maxlength ="4" size="4"><br>
+                    <span class="s">Month</span><span class="day">Day</span><span class="year">Year</span><br><br>
+                    <label for="resume">Upload Resume <span id="mandatory">*</span></label>
+                    <input type="file" class="input" id="resume" name="resume"><br><br>
+                    <button type="submit" onclick="alert('Congratulations! your form has been submitted succesfully')">Submit</button>
+                </form>    
+             </div>
+    </body>
+</html>
